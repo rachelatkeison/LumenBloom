@@ -1,21 +1,21 @@
 # LumenBloom
 
-**Adaptive Synth Engine — Aureine Audio Systems**
+**Adaptive Synth Engine by Aureine Audio Systems**
 
 LumenBloom is a polyphonic synthesizer plugin built in C++ using JUCE.  
-It was designed as a flagship portfolio project combining audio DSP, sound design, and a minimal, expressive interface.
+It was designed as a portfolio project combining audio DSP, sound design, and a minimal, expressive interface.
 
 ---
 
 ## 🎧 Demo
 
-👉 [Watch Demo](PASTE_YOUR_VIDEO_LINK_HERE)
+👉 [Watch Demo](https://youtu.be/n7tlvAG7nyU)
 
 ---
 
 ## ✨ Overview
 
-This is a fully functional synth engine built from scratch — not just a basic oscillator demo.
+This is a fully functional synth engine built from scratch and not just a basic oscillator demo.
 
 The goal was to create something that feels:
 - responsive
@@ -118,7 +118,20 @@ Focus areas:
 
 ## 📸 Screenshots
 
-*Add screenshots here*
+### Main Interface
+A full view of LumenBloom showing the synth layout, visualizers, preset controls, and performance keyboard.
+
+![LumenBloom Main Interface](assets/lumenbloom-main-interface.png)
+
+### Waveform + Envelope Visualization
+A closer look at the combined waveform viewer and envelope display while the synth is active.
+
+![LumenBloom Visualizers](assets/lumenbloom-visualizers.png)
+
+### Performance + Preset Workflow
+The interactive keyboard, preset system, and expressive control surface used during testing and demo playback.
+
+![LumenBloom Performance View](assets/lumenbloom-performance.png)
 
 ---
 
