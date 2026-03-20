@@ -1,0 +1,26 @@
+# mac
+.DS_Store
+
+# build output
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+
+# juce generated binaries / plugin artefacts
+*_artefacts/
+*.app
+*.component
+*.vst3
+
+# misc
+*.swp
+*.tmp
