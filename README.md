@@ -165,4 +165,3 @@ LumenBloom is part of my *Aureine Audio Systems* portfolio, focused on building 
 GitHub: [https://github.com/rachelatkeison](https://github.com/rachelatkeison)
 
 Linkedin: [www.linkedin.com/in/rachel-atkeison](www.linkedin.com/in/rachel-atkeison)
-```
