@@ -1,5 +1,3 @@
-
-```md
 # LumenBloom
 
 **Adaptive Synth Engine — Aureine Audio Systems**
@@ -68,11 +66,7 @@ instead of purely technical.
 
 ## 🧠 Signal Flow
 
-```
-
 MIDI → Voice → Oscillators → Wavetable → Envelope → Filter → Modulation → Effects → Output
-
-````
 
 Each note creates a voice that runs its own full signal chain in real time.
 
