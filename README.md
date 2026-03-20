@@ -1,99 +1,93 @@
+
 ```md
 # LumenBloom
 
-a soft, expressive synthesizer  
-built as part of my aureine audio systems portfolio  
+**Adaptive Synth Engine — Aureine Audio Systems**
+
+LumenBloom is a polyphonic synthesizer plugin built in C++ using JUCE.  
+It was designed as a flagship portfolio project combining audio DSP, sound design, and a minimal, expressive interface.
 
 ---
 
-## what this is
+## 🎧 Demo
 
-LumenBloom is a polyphonic synthesizer plugin I built in C++ using JUCE.  
-
-I wanted to create something that felt less like a technical tool and more like an instrument you could actually sit with — something that feels responsive, slightly dreamy, and alive when you play it.
-
-This project is where I started seriously combining:
-- audio DSP
-- plugin development
-- sound design
-- visual interaction
-
-into one cohesive system.
+👉 [Watch Demo](PASTE_YOUR_VIDEO_LINK_HERE)
 
 ---
 
-## demo
+## ✨ Overview
 
-[watch the demo](PASTE_YOUR_VIDEO_LINK_HERE)
+This is a fully functional synth engine built from scratch — not just a basic oscillator demo.
+
+The goal was to create something that feels:
+- responsive
+- atmospheric
+- musically expressive
+
+instead of purely technical.
 
 ---
 
-## what it can do
+## 🔊 Features
 
-this is a full synth engine, not just a basic oscillator demo.
-
-### sound engine
-- polyphonic voice system  
-- two oscillators (sine / square / saw)  
-- wavetable blending  
+### Core DSP
+- Polyphonic voice architecture  
+- Dual oscillators (sine / square / saw)  
+- Wavetable blending  
 - ADSR envelope  
-- multimode filter (low pass / high pass / band pass)  
+- Multimode filter (LP / HP / BP)  
 - LFO modulation  
-- modulation routing (filter, wavetable, pitch)
+- Modulation routing (cutoff / wavetable / pitch)
 
-### sound design features
-- detune + unison voices  
-- noise layer  
-- stereo width control  
-- soft drive / saturation  
-- velocity-sensitive keyboard  
+### Sound Design
+- Detune + unison voices  
+- Noise layer  
+- Stereo width control  
+- Soft drive / saturation  
+- Velocity-sensitive performance keyboard  
 
-### effects
-- delay  
-- reverb  
-- stereo widening  
+### Effects
+- Delay  
+- Reverb  
+- Stereo widening  
 
-### plugin + system features
-- VST3 plugin  
-- standalone app  
-- preset save / load system  
+### Plugin + System
+- VST3 plugin support  
+- Standalone application  
+- Preset save / load system  
 - MIDI input support  
-- parameter automation through APVTS  
+- DAW automation (APVTS)
 
-### interface
-- custom UI built in JUCE  
-- waveform visualizer  
-- envelope visualizer  
-- interactive keyboard with glow feedback  
+### Interface
+- Custom JUCE UI  
+- Waveform visualizer  
+- Envelope visualizer  
+- Interactive keyboard with glow feedback  
 
 ---
 
-## how it works (simplified)
+## 🧠 Signal Flow
 
 ```
 
-midi → voices → oscillators → wavetable → envelope → filter → modulation → effects → output
+MIDI → Voice → Oscillators → Wavetable → Envelope → Filter → Modulation → Effects → Output
 
 ````
 
-each note creates a voice, and each voice runs its own full signal chain in real time.
+Each note creates a voice that runs its own full signal chain in real time.
 
 ---
 
-## technical notes
+## 🛠️ Tech Stack
 
-- written in C++ using JUCE  
-- built with CMake + Xcode (macOS)  
-- real-time safe (no memory allocation in the audio thread)  
-- modular structure (DSP separated from UI)  
-
-a lot of the focus was making sure everything stayed stable and responsive while still sounding full.
+- C++  
+- JUCE Framework  
+- CMake  
+- Xcode (macOS)
 
 ---
 
-## building it
-
-if you want to run it:
+## 🚀 Build Instructions
 
 ```bash
 git clone https://github.com/YOURUSERNAME/LumenBloom.git
@@ -102,41 +96,43 @@ cmake -B build
 cmake --build build
 ````
 
-standalone app will be in:
+### Run
+
+* Standalone:
 
 ```
 build/LumenBloom_artefacts/Standalone/
 ```
 
-or load the VST3 in a DAW (I used REAPER while developing)
+* Plugin:
+  Load the VST3 in your DAW (REAPER recommended)
 
 ---
 
-## design approach
+## 🎨 Design Approach
 
-I didn’t want this to feel like a generic plugin.
+LumenBloom was built to feel like an instrument, not just a plugin.
 
-the goal was something that feels:
+Focus areas:
 
-* soft but responsive
-* minimal but expressive
-* simple on the surface, deeper when you explore it
-
-a lot of the choices (visuals, motion, presets) were made with that in mind.
-
----
-
-## screenshots
-
-(add screenshots here later)
+* clean, minimal interface
+* smooth interaction and motion
+* expressive preset design
+* balance between simplicity and depth
 
 ---
 
-## structure
+## 📸 Screenshots
+
+*Add screenshots here*
+
+---
+
+## 📁 Project Structure
 
 ```
 Source/
-  PluginProcessor.*   // audio + DSP engine
+  PluginProcessor.*   // DSP + engine
   PluginEditor.*      // UI
   SynthVoice.*        // voice system
   Oscillator.*        // waveform generation
@@ -148,18 +144,17 @@ CMakeLists.txt
 
 ---
 
-## about me
+## 💫 About
 
-Rachel Atkeison
-computer science student + music technology builder
+**Rachel Atkeison**
+Computer Science + Music Technology
 
-this is part of my aureine audio systems portfolio where I’m exploring audio software, DSP, and interactive music tools.
+LumenBloom is part of my *Aureine Audio Systems* portfolio, focused on building expressive audio software and digital instruments.
 
 ---
 
-## contact
+## 📬 Contact
 
-github: [https://github.com/YOURUSERNAME](https://github.com/YOURUSERNAME)
+GitHub: [https://github.com/rachelatkeison](https://github.com/rachelatkeison)
 
-````
-
+```
