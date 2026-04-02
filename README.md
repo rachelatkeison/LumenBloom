@@ -1,9 +1,9 @@
 # LumenBloom
 
-**Adaptive Synth Engine by Aureine Audio Systems**
+**Adaptive Synth Engine — Aureine Audio Systems**
 
 LumenBloom is a polyphonic synthesizer plugin built in C++ using JUCE.  
-It was designed as a portfolio project combining audio DSP, sound design, and a minimal, expressive interface.
+I built this as a portfolio project to better understand real-time audio systems while also creating something that actually feels good to play.
 
 ---
 
@@ -15,14 +15,14 @@ It was designed as a portfolio project combining audio DSP, sound design, and a 
 
 ## ✨ Overview
 
-This is a fully functional synth engine built from scratch and not just a basic oscillator demo.
+This is a fully functional synth engine built from scratch — not just a basic oscillator demo.
 
-The goal was to create something that feels:
-- responsive
-- atmospheric
-- musically expressive
+The main goal wasn’t just technical correctness, but to make something that feels:
+- responsive  
+- atmospheric  
+- musically expressive  
 
-instead of purely technical.
+A lot of the design decisions came from that idea.
 
 ---
 
@@ -66,9 +66,15 @@ instead of purely technical.
 
 ## 🧠 Signal Flow
 
+```
+
 MIDI → Voice → Oscillators → Wavetable → Envelope → Filter → Modulation → Effects → Output
 
-Each note creates a voice that runs its own full signal chain in real time.
+````
+
+Each note creates its own voice, and that voice runs the full signal chain in real time.
+
+I tried to keep this structure pretty modular so it doesn’t become impossible to expand later.
 
 ---
 
@@ -84,7 +90,7 @@ Each note creates a voice that runs its own full signal chain in real time.
 ## 🚀 Build Instructions
 
 ```bash
-git clone https://github.com/YOURUSERNAME/LumenBloom.git
+git clone https://github.com/rachelatkeison/LumenBloom.git
 cd LumenBloom
 cmake -B build
 cmake --build build
@@ -92,43 +98,52 @@ cmake --build build
 
 ### Run
 
-* Standalone:
+Standalone:
 
 ```
 build/LumenBloom_artefacts/Standalone/
 ```
 
-* Plugin:
-  Load the VST3 in your DAW (REAPER recommended)
+Plugin:
+
+* Load the VST3 in your DAW (REAPER recommended)
 
 ---
 
 ## 🎨 Design Approach
 
-LumenBloom was built to feel like an instrument, not just a plugin.
+LumenBloom was designed to feel more like an instrument than a tool.
 
-Focus areas:
+I focused on:
 
-* clean, minimal interface
-* smooth interaction and motion
-* expressive preset design
-* balance between simplicity and depth
+* keeping the interface minimal
+* making controls feel smooth and intentional
+* designing presets that actually show what the engine can do
+
+Some parts of the system are intentionally simple right now so they’re easier to expand later (especially the modulation system).
 
 ---
 
 ## 📸 Screenshots
 
 ### Main Interface
+
 A full view of LumenBloom showing the synth layout, visualizers, preset controls, and performance keyboard.
 
 ![LumenBloom Main Interface](assets/lumenbloom-main-interface.png)
 
+---
+
 ### Waveform + Envelope Visualization
+
 A closer look at the combined waveform viewer and envelope display while the synth is active.
 
 ![LumenBloom Visualizers](assets/lumenbloom-visualizers.png)
 
+---
+
 ### Performance + Preset Workflow
+
 The interactive keyboard, preset system, and expressive control surface used during testing and demo playback.
 
 ![LumenBloom Performance View](assets/lumenbloom-performance.png)
@@ -163,5 +178,6 @@ LumenBloom is part of my *Aureine Audio Systems* portfolio, focused on building 
 ## 📬 Contact
 
 GitHub: [https://github.com/rachelatkeison](https://github.com/rachelatkeison)
+LinkedIn: [https://www.linkedin.com/in/rachel-atkeison](https://www.linkedin.com/in/rachel-atkeison)
 
-Linkedin: [www.linkedin.com/in/rachel-atkeison](www.linkedin.com/in/rachel-atkeison)
+````
