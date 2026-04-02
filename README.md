@@ -9,7 +9,7 @@ I built this as a portfolio project to better understand real-time audio systems
 
 ## 🎧 Demo
 
-👉 [Watch Demo](https://youtu.be/n7tlvAG7nyU)
+👉 [![Aureine Live Demo](https://img.youtube.com/vi/n7tlvAG7nyU/0.jpg)](https://www.youtube.com/watch?v=n7tlvAG7nyU)
 
 ---
 
